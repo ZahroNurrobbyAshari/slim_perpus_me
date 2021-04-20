@@ -17,5 +17,6 @@ return function (App $app) {
     $app->get('/slim/home',function(Request $request,Response $response,array $args)use($container){
         $container->get('logger')->info("ada yang akses /home");
         echo "jembot";
+     return $container->get('renderer')->render($response,'index.phtml',$args);
     });
 };
