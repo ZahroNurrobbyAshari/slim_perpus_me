@@ -33,5 +33,9 @@ $routes($app);
 $routes = require __DIR__ . '/../src/routes/user.php';
 $routes($app);
 
+// routes admin 
+$routes = require __DIR__ . '/../src/routes/admin.php';
+$routes($app);
+
 // Run app
 $app->run();

@@ -3,7 +3,7 @@ return [
     'settings' => [
         'displayErrorDetails' => true, // set to false in production
         'addContentLengthHeader' => false, // Allow the web server to send the content-length header
-
+        'cover_directory' => __DIR__ . '/../public/cover/',
         // Renderer settings
         'renderer' => [
             'template_path' => __DIR__ . '/../templates/',
@@ -17,12 +17,12 @@ return [
         ],
 
         // Database settings
-        'db'=>[
-            'host'=>'127.0.0.1',
-            'user'=>'root',
-            'pass'=>'',
-            'dbname'=>'perpus_coba',
-            'driver'=>'mysql',
+        'db' => [
+            'host' => '127.0.0.1',
+            'user' => 'root',
+            'pass' => '',
+            'dbname' => 'perpus_coba',
+            'driver' => 'mysql',
         ],
     ],
 ];
